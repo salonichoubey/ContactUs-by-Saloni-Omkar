@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact us | Learn Road</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contactUs.css">
+
+</head>
+<body>
+
+    <!-- NAVBAR -->
+
+  <nav class="navbar">
+    <div class="brand-title">
+      <!-- Learn<span class="road">Road</span> -->
+      <img src="images/logo.png" alt="LearnRoad Logo">
+    </div>
+    <a href="#" class="toggle-button">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <!-- <h1 style="text-align: center;">HEADER</h1> -->
+    <div class="container">
+        <div class="contact-box">
+            <!-- MAP -->
+            <!-- <div class="map"></div> -->
+
+            <!-- CONTACT DETAILS  -->
+            
+            <div class="left" >
+                <!-- <h2>ADDRESS</h2>
+                <h3>LearnRoad</h2>
+                <p>123 ABC, Street 001 <br>
+                Mumbai -400001
+                </p> -->
+
+                <h2>ENQUIRY</h2>
+                <h3>EMAIL: </h3>
+                <a class="email" href="mailto:learnroad.official@gmail.com">learnroad.official@gmail.com</a>
+                <br><br>
+                <p>We are happy to hear from you!</p>
+            </div>
+
+              
+            <!-- FORM -->
+            <div class="right">
+                <h2>Contact Us</h2>
+                <form action="contactus.php" method="POST">
+                    <input type="text" class="field" placeholder="Your Name" required name="name">
+                    <input type="email" class="field" placeholder="Your Email" required name="email">
+                    <input type="text" class="field" placeholder="Your Phone" required name="number" pattern="[1-9]{1}[0-9]{9}">
+                    <textarea class="field" placeholder="Message" maxlength="255" name="message"></textarea>
+                    <button type="submit" class="btn">Send Message!</button>
+                </form>
+            </div>
+        </div>
+        <!-- JS FOR NAVBAR -->
+  <script type="text/javascript">
+    const togglebtn = document.getElementsByClassName('toggle-button')[0];
+    const navlinks = document.getElementsByClassName('navbar-links')[0];
+    
+    togglebtn.addEventListener('click', () => {
+        navlinks.classList.toggle('active')
+    })
+</script>
+    </body>
+    </html>
